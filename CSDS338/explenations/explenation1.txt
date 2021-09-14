@@ -1,0 +1,54 @@
+1) A microkernel is the bareminimum amount of a software that is needed in order to run an operating system.
+This is important for lightweight and power efficent devices such as internet of things devices as the microkernel allows for them to do their function with maximum overhead/minimum complexity.
+
+
+2) TGID, or thread group ID, is the process ID of the first thread that created the process that the thread is working on.
+
+(Help from https://stackoverflow.com/questions/9305992/if-threads-share-the-same-pid-how-can-they-be-identified
+
+
+3)
+Data: Amount of private memory reserved by a process, may or may not be currently mapped to physical data.
+
+CODE: Code Size, amount of physical memory currently devoted to a executable code
+
+nTH: number of threads a process is associated with
+
+P: Last used CPU, number represents last used processor, can change fruquently based on the number of CPUS in the system.
+
+GROUP: Name of the group a process belongs to
+
+CGNAME: name of control group a process belongs to (- if no control group)
+
+(Help from https://man7.org/linux/man-pages/man1/top.1.html)
+
+
+4) In a Linux/Linux-like system, the maximum PID can be found in /proc/sys/kernel/pid_max.
+This file shows the maximum PID, the default being 32768, and allows the usser to change it.
+
+(Help from https://stackoverflow.com/questions/6294133/maximum-pid-in-linux#:~:text=The%20maximum%20value%20of%20the,sys%2Fkernel%2Fpid_max%20file.)
+
+
+5) In the migration of a process from one CPU to another, the process will first be put on hold and put in memory.
+Then, the process will wait until its time on hold is up, and be assigned another CPU, where the data will be retrieved from memory, and worked on by the CPU.
+
+
+6) kworker is a placeholder process for kernel worker threads. They control the IO, interupts, timers, and other properties of the OS.
+In the case of kworker/0:1H, it is the kernel thread worker on CPU 0.
+As for the 1H after the colon, that represents the nice value of the thread worker, with the H suffex representing highpriority workers.
+
+(Help from https://lkml.org/lkml/2013/3/19/661)
+
+
+7) ASLR stands for address space layout randomization.
+By randomizing the physical memory, exploits become harder to find. This leads to flaws or vulnerabilitys becoming harder to exploit.
+By using the cache hierarchy on modern day processors, a cleaver hacker would be able to overcome ASLR, and determine the physical location of data in the memory.
+
+(Help from https://hackaday.com/tag/aslr/)
+
+
+8) video
+
+9) video
+
+10)
