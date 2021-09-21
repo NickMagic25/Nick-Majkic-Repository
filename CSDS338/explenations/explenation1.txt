@@ -47,8 +47,9 @@ By using the cache hierarchy on modern day processors, a cleaver hacker would be
 (Help from https://hackaday.com/tag/aslr/)
 
 
-8) video
+8) video (code for 8 and 9 from https://www.tutorialspoint.com/how-to-create-a-process-in-linux)
 
 9) video
 
-10)
+10) In a ready-to-run queue at equilibrium, everything in the queue at equiliburum is at a point of stability, and does not represent the maximum length/ time it may take in order to reach that point.
+It is better report the load averages over intervals, as it is a more accurate description of how a process is using a systems resources.
